@@ -24,6 +24,11 @@ namespace LongRunningTask
 			});
 		}
 
+		/// <summary>
+		/// StartClicked
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		void StartClicked(System.Object sender, System.EventArgs e)
 		{
 			var message = new StartLongRunningTaskMessage();
@@ -31,6 +36,11 @@ namespace LongRunningTask
 
 		}
 
+		/// <summary>
+		/// StopClicked
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		void StopClicked(System.Object sender, System.EventArgs e)
 		{
 			var message = new StopLongRunningTaskMessage();
