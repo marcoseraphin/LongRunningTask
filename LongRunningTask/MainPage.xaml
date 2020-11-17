@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="LightBlue"
+             x:Class="LongRunningTask.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="34" CornerRadius="0">
+            <Label Text="Long Running Task" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Margin="10" Text="Start" BackgroundColor="LightGreen" FontSize="24" Clicked="StartClicked" />
+        <Button Margin="10" Text="Stop" BackgroundColor="LightCoral" FontSize="24" Clicked="StopClicked" />
+        <Label x:Name="labelCounter" Text="Counter" FontSize="24" Margin="20" HorizontalOptions="CenterAndExpand"/> 
+    </StackLayout>
+
+</ContentPage>
